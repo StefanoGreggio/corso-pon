@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./css/mstyle.css">
+
+    <style>
+        .trending .movie-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-top: 50px;
+        }
+
+        .list {
+            width: 250px;
+            height: 300px;
+            position: relative;
+        }
+
+        .list::before {
+            content: '';
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 10px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(50px);
+            transition: all 0.4s;
+        }
+
+        .list:hover::before {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .list:nth-child(1)::before {
+            content: 'extraction';
+        }
+
+        .list:nth-child(2)::before {
+            content: 'star wars';
+        }
+
+        .list:nth-child(3)::before {
+            content: 'The call wild';
+        }
+
+        .list:nth-child(4)::before {
+            content: 'birds of prey';
+        }
+
+        .list:nth-child(5)::before {
+            content: 'sonic';
+        }
+
+
+
+
+        .list:nth-child(1) {
+            background: url(https://cdn.pixabay.com/photo/2015/01/09/02/45/laptop-593673__340.jpg) no-repeat center center /cover;
+        }
+
+        .tv .list:nth-child(1) {
+            background: url(https://cdn.pixabay.com/photo/2015/01/09/02/45/laptop-593673__340.jpg) no-repeat center center /cover;
+        }
+
+
+
+
+        .tv .list:nth-child(1)::before {
+            content: 'money heist';
+        }
+
+        .tv .list:nth-child(2)::before {
+            content: 'westworld';
+        }
+
+        .tv .list:nth-child(3)::before {
+            content: 'upload';
+        }
+
+        .tv .list:nth-child(4)::before {
+            content: 'game of thrones';
+        }
+
+        .tv .list:nth-child(5)::before {
+            content: 'the last dance';
+        }
+
+        .tv {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="right">
+        <div class="trending">
+            <div class="movie-container">
+                <div class="list "></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+            </div>
+        </div>
+        <div class="trending">
+            <div class="movie-container tv">
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
