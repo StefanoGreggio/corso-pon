@@ -218,3 +218,148 @@ ul {
     top: 130px !important;
     right: 0px !important;
 }
+
+
+.trending .movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.list {
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+
+.list::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 0.4s;
+}
+
+.list:hover::before {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.list:nth-child(1)::before {
+    content: 'Guardiani della Galassia';
+}
+
+.list:nth-child(2)::before {
+    content: 'Wakanda Forever';
+}
+
+.list:nth-child(3)::before {
+    content: 'Avatar : La via del acqua';
+}
+
+.list:nth-child(4)::before {
+    content: 'Suicide Squad';
+}
+
+.list:nth-child(5)::before {
+    content: 'Ant-man-wasp: Quantimania';
+}
+
+.list:nth-child(6)::before {
+    content: 'The Nun 2';
+}
+
+
+
+
+.list:nth-child(1) {
+    background: url(https://pad.mymovies.it/filmclub/2012/07/018/locandina.jpg) no-repeat center center /cover;
+}
+
+.tv .list:nth-child(1) {
+    background: url(https://cdn1.thespacecinema.it/-/media/tsc/2023/03/scream-vi/new/locandina_scream-vi_top.jpg) no-repeat center center /cover;
+}
+
+.list:nth-child(2) {
+    background: url(https://i0.wp.com/cinemanuovo.it/nver/wp-content/uploads/2022/10/locandina_black-panther-wakanda-forever.png?fit=500%2C715&ssl=1) no-repeat center center/cover;
+}
+
+.tv .list:nth-child(2) {
+    background: url(https://pad.mymovies.it/filmclub/2019/12/164/locandina.jpg) no-repeat center center/cover;
+}
+
+.list:nth-child(3) {
+    background: url(https://lumiere-a.akamaihd.net/v1/images/image_d2065717.jpeg?region=0,0,540,810) no-repeat center center/cover;
+}
+
+.tv .list:nth-child(3){
+    background: url(https://i.ebayimg.com/images/g/yyYAAOSwnNZhG4Ls/s-l500.jpg) no-repeat center center/cover;
+}
+
+.list:nth-child(4) {
+    background: url(https://cdn.shopify.com/s/files/1/2036/5517/products/MM00227554.jpg?v=1665006738) no-repeat center center/cover;
+}
+
+.tv .list:nth-child(4){
+    background: url(https://mr.comingsoon.it/imgdb/locandine/big/62781.jpg) no-repeat center center/cover;
+}
+
+.list:nth-child(5) {
+    background: url(https://cdn1.thespacecinema.it/-/media/tsc/2023/02/ant-man-quantumania/locandina_ant-man-and-the-wasp-quantumania_lable-top_defdef.jpg) no-repeat center center/cover;
+}
+
+.tv .list:nth-child(5){
+    background: url(https://www.bellinicinemateatro.it/wp-content/uploads/2023/03/john-wick-4-poster-420x600.jpeg) no-repeat center center/cover;
+}
+
+.list:nth-child(6) {
+    background: url(https://source.boomplaymusic.com/buzzgroup1/M00/35/79/rBEevGIcjAGAdajtAAGHga1SY_U384.jpg) no-repeat center center/cover;
+}
+
+.tv .list:nth-child(6){
+    background: url(https://www.ucicinemas.it/media/movie/o/2022/doctor-strange-nel-multiverso-della-follia_nQf5OS4.jpg) no-repeat center center/cover;
+}
+
+
+
+.tv .list:nth-child(1)::before {
+    content: 'Scream VI';
+}
+
+.tv .list:nth-child(2)::before {
+    content: 'Shazam: La furia degli dei';
+}
+
+.tv .list:nth-child(3)::before {
+    content: 'Fast & Furios 9';
+}
+
+.tv .list:nth-child(4)::before {
+    content: 'Demon Slayer: Distruttori di demoni';
+}
+
+.tv .list:nth-child(5)::before {
+    content: 'John Wick 4';
+}
+
+.tv .list:nth-child(6)::before {
+    content: 'Doctor Stranger: Multiverso della follia';
+}
+
+.tv {
+    margin-bottom: 50px;
+}
